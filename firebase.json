@@ -1,0 +1,9 @@
+{
+  "firebase": "is-ember-fast-yet",
+  "public": "./dist",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

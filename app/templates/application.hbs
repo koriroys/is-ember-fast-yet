@@ -1,3 +1,16 @@
-<h2 id="title">Welcome to Ember.js</h2>
+<p>
+  Is Ember fast yet?
+</p>
 
-{{outlet}}
+<div class="answer">{{model.answer}}</div>
+
+{{ember-progress total=model.total completed=model.completed}}
+
+<p class="info">
+  The new Glimmer engine makes Ember's DOM rendering incredibly fast, beating out even virtual DOM implementations.
+  <a href="https://github.com/emberjs/ember.js/pull/10501">Follow along on the <code>idempotent-rerender</code> branch on Github.</a>
+</p>
+
+<p>
+  Check out the <a href="https://dbmonster.firebaseapp.com">demo app</a> (<a href="https://github.com/wycats/dbmonster">Source</a>)
+</p>
