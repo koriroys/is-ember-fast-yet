@@ -6,7 +6,7 @@ export default Ember.Component.extend({
   didInsertElement: function() {
     var resize = () => {
       this.$().addClass('disable-animating');
-      this.set('totalWidth', this.$(window).width() * 0.8);
+      this.set('totalWidth', $(this.element.parentNode).width() * 0.8);
       this.$().addClass('remove-animating');
     };
 

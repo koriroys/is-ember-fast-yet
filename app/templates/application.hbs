@@ -4,15 +4,24 @@
 
 <div class="answer">{{model.answer}}</div>
 
-{{ember-progress total=model.total completed=model.completed}}
+<div>
+  {{ember-progress total=model.total completed=model.completed}}
+</div>
 
 <p class="info">
-  The new Glimmer engine makes Ember's DOM rendering incredibly fast.
-  <a href="https://github.com/emberjs/ember.js/pull/10501">Follow along on the <code>glimmer</code> branch on Github.</a>
+  At EmberConf 2015, Tom and Yehuda introduced a new rendering engine for
+  Ember.js. Dubbed <strong>Glimmer</strong>, it makes UI rendering
+  increadibly fast. <a href="http://f.cl.ly/items/0t031v2Z3y001V1N0F3N/Virtual%20DOM.pdf">
+  These slides</a> compare Glimmer with a traditional DOM-diffing
+  render.
+</p>
+<p class="info">
+  To make Ember fast, help us ship Glimmer or just follow along
+  <a href="https://github.com/emberjs/ember.js/pull/10501">on GitHub</a>.
 </p>
 
 <p>
-  Check out the <a href="https://dbmonster.firebaseapp.com">demo app</a> (<a href="https://github.com/wycats/dbmonster">Source</a>)
+  How fast is fast? Check out the <a href="https://dbmonster.firebaseapp.com">demo app</a> (<a href="https://github.com/wycats/dbmonster">source</a>)
 </p>
 
 <img src="/assets/images/glimmer-logo.png" width=326 height=91>
