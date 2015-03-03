@@ -3,7 +3,17 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   classNames: 'ember-progress',
 
-  totalWidth: 900,
+  didInsertElement: function() {
+    var resize = () => {
+      this.$().addClass('disable-animating');
+      this.set('totalWidth', this.$(window).width() * 0.8);
+      this.$().addClass('remove-animating');
+    };
+
+
+    this.$(window).on('resize', resize);
+    resize();
+  },
 
   completedWidth: function() {
     var completed = this.get('completed'),
