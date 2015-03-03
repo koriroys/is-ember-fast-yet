@@ -18,9 +18,14 @@
   }
 
   .completed {
+    box-sizing: border-box;
     background-color: red;
     height: 20px;
     transition: width 1s ease-in;
+    text-align: left;
+    color: white;
+    line-height: 22px;
+    padding-left: 5px;
   }
 }
 
