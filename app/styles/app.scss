@@ -1,3 +1,23 @@
+html {
+}
+
+$green: #00A388;
+
+body {
+  color: #334;
+}
+
+a {
+  color: #FF6138;
+  text-decoration: none;
+}
+
+img {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+
 .ember-application {
   max-width: 900px;
   margin: 29px auto;
@@ -13,20 +33,23 @@
 
 .ember-progress {
   .total {
-    border: 1px solid black;
-    height: 20px;
+    border: 1px solid $green;
+    height: 25px;
     margin: 0 auto;
+    width: 80%;
+    border-radius: 20px;
+    overflow: hidden;
   }
 
   .completed {
     box-sizing: border-box;
-    background-color: red;
-    height: 20px;
+    background-color: $green;
+    height: 25px;
     transition: width 1s ease-in;
     text-align: left;
     color: white;
-    line-height: 22px;
-    padding-left: 5px;
+    line-height: 27px;
+    padding-left: 10px;
   }
 
   &.disable-animating .completed {
@@ -34,12 +57,31 @@
   }
 }
 
-.info {
-  width: 500px;
-  margin: 23px auto;
+.trend {
+  margin-top: 10px;
+  color: $green;
+}
+
+main {
+  width: 80%;
+  text-align: left;
+  margin: 60px auto;
   line-height: 22px;
 }
 
 img {
   margin: 25px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid $green;
+  width: 60%;
+  margin-bottom: 50px;
+}
+
+footer {
+  font-size: 1.7em;
+  color: #030;
+  margin: 50px auto 0;
 }

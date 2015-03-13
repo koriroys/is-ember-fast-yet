@@ -6,20 +6,21 @@ export default Ember.Component.extend({
   didInsertElement: function() {
     var resize = () => {
       this.$().addClass('disable-animating');
-      this.set('totalWidth', $(this.element.parentNode).width() * 0.8);
       this.$().addClass('remove-animating');
     };
-
 
     this.$(window).on('resize', resize);
     resize();
   },
 
-  completedWidth: function() {
-    var completed = this.get('completed'),
-        total = this.get('total'),
-        totalWidth = this.get('totalWidth');
+  failing: function() {
+    return this.get('total') - this.get('completed');
+  }.property('completed', 'total'),
 
-    return (completed / total) * totalWidth;
+  completedPercent: function() {
+    var completed = this.get('completed'),
+        total = this.get('total');
+
+    return (completed / total) * 100;
   }.property('totalWidth', 'completed', 'total')
 });

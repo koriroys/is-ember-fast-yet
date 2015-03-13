@@ -1,3 +1,5 @@
+<img src="/assets/images/glimmer-logo.png" alt="Glimmer" width=170>
+
 <p>
   Is Ember fast yet?
 </p>
@@ -5,23 +7,29 @@
 <div class="answer">{{model.answer}}</div>
 
 <div>
-  {{ember-progress total=model.total completed=model.completed}}
+  {{ember-progress total=model.total completed=model.completed change=model.change}}
+
+  <div class="trend">{{model.trend}}</div>
 </div>
 
-<p class="info">
-  At EmberConf 2015, Tom and Yehuda introduced a new rendering engine for
-  Ember.js. Dubbed <strong>Glimmer</strong>, it makes UI rendering
-  increadibly fast. <a href="http://f.cl.ly/items/0t031v2Z3y001V1N0F3N/Virtual%20DOM.pdf">
-  These slides</a> compare Glimmer with a traditional DOM-diffing
-  render.
-</p>
-<p class="info">
-  To make Ember fast, help us ship Glimmer or just follow along
-  <a href="https://github.com/emberjs/ember.js/pull/10501">on GitHub</a>.
-</p>
+<main>
+  <p class="info">
+    At EmberConf 2015, Tom and Yehuda introduced a new rendering engine for
+    Ember.js. Dubbed <strong>Glimmer</strong>, it makes UI rendering
+    incredibly fast. <a href="http://f.cl.ly/items/0t031v2Z3y001V1N0F3N/Virtual%20DOM.pdf">
+    These slides</a> compare Glimmer with a traditional DOM-diffing
+    render.
+  </p>
+  <p class="info">
+    To make Ember fast, help us ship Glimmer or just follow along
+    <a href="https://github.com/emberjs/ember.js/pull/10501">on GitHub</a>.
+  </p>
+</main>
 
-<p>
-  How fast is fast? Check out the <a href="https://dbmonster.firebaseapp.com">demo app</a> (<a href="https://github.com/wycats/dbmonster">source</a>)
-</p>
+<hr>
 
-<img src="/assets/images/glimmer-logo.png" width=326 height=91>
+<footer>
+  <p>
+    How fast is fast? Check out the <a href="https://dbmonster.firebaseapp.com">demo app</a> (<a href="https://github.com/wycats/dbmonster">source</a>)
+  </p>
+</footer>
